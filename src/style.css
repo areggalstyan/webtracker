@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bar {
+    width: 100%;
+    display: flex;
+    place-items: center;
+    padding: 1rem;
+    box-shadow: 0 5px 15px 0 #bbb;
+    background-color: #eee;
+    height: 5rem;
+}
+
+.page-btn {
+    width: 10%;
+    display: inline-flex;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    place-items: center;
+    flex-direction: column;
+}
+
+.page-btn-active::after {
+    content: "";
+    display: block;
+    background-color: #000;
+    width: 20%;
+    height: 2px;
+}
+
+.title {
+    width: 80%;
+    text-align: center;
+}
+
+.container {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 5rem);
+}
+
+.container-active {
+    display: block;
+}
+
+.input, .btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    width: 30rem;
+    height: 3rem;
+    display: block;
+    margin-top: 2rem;
+}
+
+.btn {
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+}
+
+.input:first-child {
+    margin-top: 0;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.inputs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view-content {
+    position: absolute;
+    top: 2.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.website {
+    padding: 1rem;
+    border: 2px solid black;
+    margin-top: 2rem;
+}
+
+.website:last-child {
+    margin-bottom: 2.25rem;
+}
+
+.delete, .copy {
+    margin-top: 1rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.copy {
+    color: cornflowerblue;
+}
+
+.delete {
+    color: red;
+}
